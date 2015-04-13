@@ -1,10 +1,13 @@
 # dlangui-examples
-various examples for DlangUI library
+Various examples for DlangUI library.
 
-dsfml: sample mixing of DSFML and DlangUI/OpenGL drawing
-helloworld: sample for Getting Started tutorial - single button
-helloworld2: sample for Getting Started tutorial - VerticalLayout
-helloworld3: sample for Getting Started tutorial - HorizontalLayout
-helloworld4: sample for Getting Started tutorial - nested layouts
-helloworld5: sample for Getting Started tutorial - TableLayout
-helloworld6: sample for Getting Started tutorial - TableLayout loaded from DML
+Samples for Getting Started tutorial:
+* helloworld:  Single Button
+* helloworld2: VerticalLayout
+* helloworld3: HorizontalLayout
+* helloworld4: Nested Layouts
+* helloworld5: TableLayout
+* helloworld6: TableLayout loaded from DML
+ 
+Using DlangGUI and DSFML
+* dsfml: sample mixing of DSFML and DlangUI/OpenGL drawing
