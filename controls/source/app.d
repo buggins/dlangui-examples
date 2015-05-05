@@ -33,10 +33,11 @@ class ControlsExampleWidget : VerticalLayout {
         }, "", this);
         // get ComboBox widget by id
         cb1 = childById!ComboBox("cb1");
+        cb1.items = ["Item 1 text"d, "Item 2 text"d, "Item 3 text"d]; // set items
+        cb1.selectedItemIndex = 0; // select first item
         edit1 = childById!EditLine("edit1");
         logWidget = childById!LogWidget("logWidget");
         // assign items for widget
-        cb1.items = ["Item 1 text"d, "Item 2 text"d, "Item 3 text"d];
         cb1.focusChange = delegate(Widget src, bool focused) {
             logLine(focused ? "cb1 is focused"d : "cb1 lost focus"d);
             return true;
