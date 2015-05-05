@@ -1,0 +1,9 @@
+{
+	"name": "controls",
+	"description": "Controls example for DlangUI",
+	"copyright": "Copyright © 2015, username",
+	"authors": ["username"],
+	"dependencies": {
+		"dlangui": "~>0.6.18"
+	}
+}
