@@ -37,10 +37,10 @@ extern (C) int UIAppMain(string[] args) {
     // create instance of click handler class
     auto clickHandler = new MyOnClickHandler();
     // assign Ok button onClick handler: 
-    btn1.onClickListener = clickHandler; // replace existing handlers with new one
-    //btn1.onClickListener.connect(clickHandler); // add one more handler
+    btn1.click = clickHandler; // replace existing handlers with new one
+    //btn1.click.connect(clickHandler); // add one more handler
     // if you want to disconnect existing handler you can use code like this:
-    //btn1.onClickListener.disconnect(clickHandler); // remove handler
+    //btn1.click.disconnect(clickHandler); // remove handler
 
     // define some class with method having same arguments and result type as our signal
     class MyOnClickHandler2 {
@@ -54,11 +54,11 @@ extern (C) int UIAppMain(string[] args) {
     // create instance of click handler class
     auto cancelClickHandler = new MyOnClickHandler2();
     // assign Cancel button onClick handler (replacing existing handlers, if any)
-    btn2.onClickListener = &cancelClickHandler.onCancelButtonClick;
+    btn2.click = &cancelClickHandler.onCancelButtonClick;
     // append handler using connect method
-    //btn2.onClickListener.connect(&cancelClickHandler.onCancelButtonClick);
+    //btn2.click.connect(&cancelClickHandler.onCancelButtonClick);
     // remove handler using disconnect method
-    //btn2.onClickListener.disconnect(&cancelClickHandler.onCancelButtonClick);
+    //btn2.click.disconnect(&cancelClickHandler.onCancelButtonClick);
 
     // set window content widget
     window.mainWidget = tlayout;

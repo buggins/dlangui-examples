@@ -26,12 +26,12 @@ extern (C) int UIAppMain(string[] args) {
     tlayout.addChild(buttons);
 
     // assign Ok button onClick handler: show content of editor
-    btn1.onClickListener = delegate(Widget src) {
+    btn1.click = delegate(Widget src) {
         window.showMessageBox("Button btn1 pressed"d, "Editor content:"d ~ edit1.text);
         return true;
     };
     // assign Cancel button onClick handler
-    btn2.onClickListener = delegate(Widget src) {
+    btn2.click = delegate(Widget src) {
         window.close();
         return true;
     };
