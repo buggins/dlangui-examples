@@ -3,7 +3,7 @@
 	"description": "Sample application combining DSFML and DLANGUI drawing",
 	"copyright": "Copyright © 2015, Developer",
 	"authors": ["Developer name"],
-	"lflags" : ["+Libs\\"],
+	"lflags_disabled" : ["+Libs\\"],
 	"targetName": "dsfmltest",
 	"targetPath": "bin",
 	"copyFiles-windows": [
@@ -13,7 +13,7 @@
 		"dlls/libsndfile-1.dll", "dlls/libstdc++-6.dll", "dlls/openal32.dll",
 		"dlls/libwinpthread-1.dll"],
 	"dependencies": {
-        	"dsfml": "~master",
+                "dsfml": "~>2.1.1",
                 "dlangui": "~master"
 	},
 	"subConfigurations": {
